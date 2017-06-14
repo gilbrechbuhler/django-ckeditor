@@ -23,7 +23,7 @@
 				requiredContent: 'div[data-oembed-url]',
 				providerUrl: new CKEDITOR.template(
 					editor.config.embed_provider ||
-					'http://noembed.com/embed?url={url}&callback={callback}'
+					'//ckeditor.iframe.ly/api/oembed?url={url}&callback={callback}'
 				),
 
 				// The filter element callback actually allows all divs with data-oembed-url,
