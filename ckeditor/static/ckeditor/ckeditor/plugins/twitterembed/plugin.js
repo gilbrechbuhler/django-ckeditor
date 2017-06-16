@@ -6,8 +6,8 @@
 ( function() {
 	'use strict';
 
-	CKEDITOR.plugins.add( 'embed', {
-		icons: 'embed', // %REMOVE_LINE_CORE%
+	CKEDITOR.plugins.add( 'twitterembed', {
+		icons: 'twitterembed', // %REMOVE_LINE_CORE%
 		hidpi: true, // %REMOVE_LINE_CORE%
 		requires: 'embedbase',
 
@@ -22,8 +22,8 @@
 				allowedContent: 'div[!data-oembed-url]',
 				requiredContent: 'div[data-oembed-url]',
 				providerUrl: new CKEDITOR.template(
-					editor.config.embed_provider ||
-					'//ckeditor.iframe.ly/api/oembed?url={url}&callback={callback}'
+					editor.config.twitter_embed_provider ||
+					'//publish.twitter.com/oembed?url={url}&callback={callback}'
 				),
 
 				// The filter element callback actually allows all divs with data-oembed-url,
@@ -57,7 +57,7 @@
 			}, true );
 
 			// Register the definition as 'embed' widget.
-			editor.widgets.add( 'embed', widgetDefinition );
+			editor.widgets.add( 'twitterembed', widgetDefinition );
 
 			// Do not filter contents of the div[data-oembed-url] at all.
 			editor.filter.addElementCallback( function( el ) {
