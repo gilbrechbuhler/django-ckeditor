@@ -22,7 +22,6 @@
 				allowedContent: 'div[!data-oembed-url]',
 				requiredContent: 'div[data-oembed-url]',
 				providerUrl: new CKEDITOR.template(
-					editor.config.twitter_embed_provider ||
 					'//publish.twitter.com/oembed?url={url}&callback={callback}'
 				),
 
