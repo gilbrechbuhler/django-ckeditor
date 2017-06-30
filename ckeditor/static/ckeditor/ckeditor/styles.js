@@ -16,7 +16,7 @@
 // We have change the DEFAULT styleSet
 CKEDITOR.stylesSet.add( 'default', [{
 	/* Block Styles */
-		name: 'Special Container',
+		name: CKEDITOR.plugins.translatedstyles.special_container_text,
 		element: 'div',
 		styles: {
 			padding: '5px 10px',

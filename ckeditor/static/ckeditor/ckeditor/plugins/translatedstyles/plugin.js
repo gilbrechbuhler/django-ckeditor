@@ -9,9 +9,7 @@
 	CKEDITOR.plugins.add( 'translatedstyles', {
 		lang: 'en,fr',
 
-		init: function( editor ) {
-			console.log(CKEDITOR.stylesSet.get('epfl'));
-		}
+		var special_container_text = editor.lang.translatedstyles.styleName;
 	} );
 
 } )();
