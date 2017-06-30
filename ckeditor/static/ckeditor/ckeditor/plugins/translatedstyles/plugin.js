@@ -10,7 +10,7 @@
 		lang: 'en,fr',
 
 		init: function( editor ) {
-			console.log(CKEditor.stylesSet.get('default'))
+			console.log(editor.stylesSet.get('default'))
 		}
 	} );
 
