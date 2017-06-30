@@ -18,7 +18,7 @@
 			CKEDITOR.tools.extend( widgetDefinition, {
 				// Use a dialog exposed by the embedbase plugin.
 				dialog: 'embedBase',
-				button: editor.lang.embedbase.button,
+				button: editor.lang.twitterembed.button,
 				allowedContent: 'div[!data-oembed-url]',
 				requiredContent: 'div[data-oembed-url]',
 				providerUrl: new CKEDITOR.template(
