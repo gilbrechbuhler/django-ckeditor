@@ -8,6 +8,10 @@
 
 	CKEDITOR.plugins.add( 'translatedstyles', {
 		lang: 'en,fr',
+
+		init: function( editor ) {
+			CKEDITOR.stylesSet.get('default')[0];
+		}	
 	} );
 
 } )();
